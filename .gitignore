@@ -1,0 +1,43 @@
+# ============================================================
+# Git 忽略规则 - 敏感文件扫描工具
+# ============================================================
+
+# === 密钥与敏感配置（不要上传！）===
+config.json
+*.env
+.env.*
+*_secret*
+*_api_key*
+*.key
+*.pem
+
+# === Python 缓存 ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === IDE 与编辑器 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 输出与日志 ===
+*.log
+scan_report_*.md
+output/
+reports/
+
+# === 临时文件 ===
+*.tmp
+*.bak
+*.orig
