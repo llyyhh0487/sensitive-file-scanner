@@ -1,7 +1,6 @@
 # 敏感路径字典 (300+ 条)
-# 编辑此文件后可立即生效，无需修改代码
+# 来自 GitHub SecLists 等安全社区的高命中率敏感路径
 # 每行一个路径，以 / 开头，以 # 开头的行为注释
-# 从 GitHub SecLists 等安全社区精选的高命中率路径
 
 # === Git & 版本控制 ===
 /.git/config
@@ -15,8 +14,6 @@
 /.gitmodules
 /.svn/entries
 /.svn/wc.db
-/.hg/store/
-/.bzr/
 /.DS_Store
 
 # === 环境配置泄露 ===
@@ -48,8 +45,6 @@
 /.settings/
 /.project
 /.classpath
-/*.sublime-project
-/*.sublime-workspace
 
 # === 备份文件 ===
 /backup
@@ -77,11 +72,6 @@
 /old/
 /bak/
 /bak.zip
-/*.bak
-/*.backup
-/*.old
-/*.orig
-/*.save
 
 # === 数据库 & 管理系统 ===
 /phpmyadmin/
@@ -97,13 +87,10 @@
 /db.sqlite
 /database.sqlite
 /redis/
-/mongodb/
-/memcached/
 
 # === 管理后台 ===
 /admin/
 /admin.php
-/admin.html
 /admin/login
 /admin/login.php
 /admin/login.html
@@ -147,7 +134,6 @@
 /magento/
 /prestashop/
 /opencart/
-/shopify/
 
 # === 配置文件 ===
 /config
@@ -161,7 +147,6 @@
 /config.xml
 /configuration
 /configuration.php
-/configuration.php.bak
 /settings
 /settings.py
 /settings.php
@@ -197,7 +182,6 @@
 /system.log
 /php_error.log
 /mysql.log
-/mysql_error.log
 
 # === API & 接口 ===
 /api/
@@ -263,11 +247,8 @@
 /.dockerignore
 /.docker/config.json
 /kubernetes/
-/k8s/
 /kubeconfig
 /.kube/config
-/helm/
-/rancher/
 
 # === CI/CD ===
 /.github/
@@ -278,9 +259,6 @@
 /Jenkinsfile
 /.drone.yml
 /azure-pipelines.yml
-/.ansible/
-/ansible.cfg
-/Vagrantfile
 /Makefile
 /Gruntfile.js
 /gulpfile.js
@@ -313,7 +291,6 @@
 /.aws/
 /.aws/credentials
 /.aws/config
-/.gcloud/
 /.azure/
 /.terraform/
 /terraform.tfstate
@@ -321,7 +298,6 @@
 /key.json
 /credentials.json
 /service-account.json
-/sa.json
 /gcloud.json
 
 # === 信息泄露 ===
@@ -337,11 +313,6 @@
 /.well-known/openid-configuration
 /CHANGELOG.md
 /CHANGELOG.txt
-/CHANGES.txt
-/RELEASE_NOTES.txt
-/UPGRADE.txt
-/INSTALL.txt
-/LICENSE.txt
 /README.md
 /README.txt
 /readme.html
@@ -356,7 +327,6 @@
 /p.php
 /phpmyadmin/
 /phpMyAdmin/
-/phpMyAdmin-4.8.1/
 /xmlrpc.php
 /wp-cron.php
 /install.php
@@ -376,7 +346,6 @@
 /development/
 /staging/
 /stage/
-/uat/
 /sandbox/
 /demo/
 /example/
@@ -386,7 +355,6 @@
 /temp/
 /cache/
 /caches/
-/sessions/
 
 # === 上传 & 文件 ===
 /upload/
@@ -409,7 +377,6 @@
 /data/
 /storage/
 /export/
-/exports/
 /import/
 
 # === 邮件 ===
@@ -418,8 +385,6 @@
 /webmail/
 /roundcube/
 /squirrelmail/
-/php-mailer/
-/phpmailer/
 
 # === 监控 ===
 /status/
@@ -427,22 +392,12 @@
 /healthcheck/
 /ping
 /metrics
-/munin/
-/nagios/
-/zabbix/
-/prometheus/
-/grafana/
 
-# === Shell & 脚本 ===
+# === Shell & 文件管理 ===
 /shell.php
 /shell.jsp
 /cmd.aspx
 /cmd.jsp
-/backdoor.php
-/b374k.php
-/c99.php
-/r57.php
-/wso.php
 /uploader.php
 /filemanager/
 /elfinder/
