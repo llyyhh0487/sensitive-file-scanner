@@ -39,7 +39,7 @@ try:
 except ImportError:
     HAS_OPENAI = False
 
-API_KEY = "sk-005aaa21a38c4d8a9013b6482d682639"
+API_KEY = ""
 API_BASE = "https://api.deepseek.com"
 MODEL = "deepseek-chat"
 DEFAULT_TIMEOUT = 8
